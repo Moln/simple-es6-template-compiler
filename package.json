@@ -1,0 +1,21 @@
+{
+  "name": "@moln/simple-es6-template-compiler",
+  "description": "Simple es6 template compiler.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Moln <moln.xie@gmail.com>",
+  "homepage": "https://github.com/Moln/simple-es6-template-compiler",
+  "keywords": [
+    "es6",
+    "compiler",
+    "template"
+  ],
+  "bugs": {
+    "url": "https://github.com/Moln/simple-es6-template-compiler/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Moln/simple-es6-template-compiler.git"
+  }
+}
