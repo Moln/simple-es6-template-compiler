@@ -1,14 +1,14 @@
 function simpleEs6Compiler(str, variables) {
-    const reEsTemplate = /(\n)|(\')|\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
-    const importsKeys = ['__quote', '__ln'];
-    const importsValues = ['\'', '\n'];
+    var reEsTemplate = /(\n)|(\')|\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
+    var importsKeys = ['__quote', '__ln'];
+    var importsValues = ['\'', '\n'];
 
-    Object.keys(variables).forEach((key) => {
+    for (var key in variables) {
         importsKeys.push(key);
         importsValues.push(variables[key]);
-    })
+    }
 
-    let source = str
+    var source = str
         .replace(reEsTemplate, function (matched, ln, quote, exp) {
             if (ln) {
                 return '\' + (__ln) + \'';
