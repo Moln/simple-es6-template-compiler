@@ -1,7 +1,7 @@
 {
   "name": "@moln/simple-es6-template-compiler",
   "description": "Simple es6 template compiler.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "author": "Moln <moln.xie@gmail.com>",
