@@ -1,7 +1,7 @@
 function simpleEs6Compiler(str, variables) {
-    var reEsTemplate = /(\n)|(\')|\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
-    var importsKeys = ['__quote', '__ln', '__r'];
-    var importsValues = ['\'', '\n', '\r'];
+    var reEsTemplate = /(\r?\n)|(\')|\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
+    var importsKeys = ['__quote', '__ln'];
+    var importsValues = ['\'', '\n'];
 
     for (var key in variables) {
         importsKeys.push(key);
@@ -25,6 +25,6 @@ function simpleEs6Compiler(str, variables) {
 
     return Function(importsKeys, source)
         .apply(undefined, importsValues);
-};
+}
 
 module.exports = simpleEs6Compiler;
