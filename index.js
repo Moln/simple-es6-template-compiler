@@ -1,7 +1,7 @@
 function simpleEs6Compiler(str, variables) {
     var reEsTemplate = /(\n)|(\')|\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g;
-    var importsKeys = ['__quote', '__ln'];
-    var importsValues = ['\'', '\n'];
+    var importsKeys = ['__quote', '__ln', '__r'];
+    var importsValues = ['\'', '\n', '\r'];
 
     for (var key in variables) {
         importsKeys.push(key);
